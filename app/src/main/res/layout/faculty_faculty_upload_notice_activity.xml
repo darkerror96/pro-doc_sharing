@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/faculty_faculty_upload_notice_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sem8.integrate.app.mainapp_1.Faculty.Faculty_Upload_Notice">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Subject: -"
+                android:textSize="20dp"
+                android:id="@+id/sub_tv"
+                android:textColor="#000"
+                tools:ignore="SpUsage" />
+
+            <View
+                android:layout_width="15dp"/>
+
+            <Spinner
+                android:id="@+id/sub_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="45dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.2dp"
+            android:layout_marginTop="0dp"
+            android:elevation="7dp"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textColor="#fff"
+            android:background="#50cbe1"
+            android:id="@+id/title_tv"
+            tools:ignore="HardcodedText"
+            android:layout_marginTop="2.7dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.2dp"
+            android:layout_marginTop="49.5dp"
+            android:elevation="7dp"
+            android:background="@android:color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/title_et"
+            android:layout_marginTop="70dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.2dp"
+            android:layout_marginTop="147dp"
+            android:elevation="7dp"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textColor="#fff"
+            android:background="#50cbe1"
+            android:id="@+id/msg_tv"
+            tools:ignore="HardcodedText"
+            android:layout_marginTop="150dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.2dp"
+            android:layout_marginTop="197dp"
+            android:elevation="7dp"
+            android:background="@android:color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/msg_et"
+            android:layout_marginTop="215dp"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Notice"
+        android:textColor="#fff"
+        android:background="#50cbe1"
+        android:id="@+id/uploadnotice_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

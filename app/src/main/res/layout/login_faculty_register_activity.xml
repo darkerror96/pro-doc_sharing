@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_faculty_register_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="sem8.integrate.app.mainapp_1.Login.Faculty_Register">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/donesub_ibtn"
+        android:src="@drawable/login_faculty_registration_done_icon"
+        android:background="@color/background"
+        android:visibility="invisible"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="305dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_ripple_effect"
+        android:text="Generate Faculty Id"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:id="@+id/reg_btn"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/login_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/login_title"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/name_et"
+            android:hint="Name (F M L)" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="4dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/fid_et"
+            tools:ignore="HardcodedText,LabelFor,RtlHardcoded"
+            android:hint="Faculty Id"
+            android:drawablePadding="20dp"
+            android:layout_above="@+id/login_btn"
+            android:layout_alignStart="@+id/div_et"
+            android:enabled="false"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="4dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/pwd_et"
+            tools:ignore="HardcodedText,LabelFor,RtlHardcoded"
+            android:hint="Password"
+            android:enabled="false"
+            android:drawableLeft="@drawable/login_password_icon"
+            android:drawablePadding="20dp"
+            android:layout_above="@+id/login_btn"
+            android:layout_alignStart="@+id/div_et" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.2dp"
+            android:elevation="7dp"
+            android:background="@android:color/black" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Faculty Registration"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:id="@+id/ll_id"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Subject"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000"
+            tools:ignore="HardcodedText,SpUsage"
+            android:id="@+id/textView3" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="4dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/dept_et"
+            android:hint="Department"
+            tools:ignore="HardcodedText" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="4dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_below="@+id/dept_et"
+            android:layout_alignStart="@+id/dept_et"
+            android:id="@+id/sem_et"
+            android:hint="Semester"
+            tools:ignore="HardcodedText" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="4dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/div_et"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/sem_et"
+            android:hint="Division"
+            tools:ignore="HardcodedText" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="4dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/sub_et"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/sem_et"
+            android:hint="Subject"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</RelativeLayout>

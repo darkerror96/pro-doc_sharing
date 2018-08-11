@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/notice"
+        android:icon="@drawable/common_notice_icon"
+        android:title="Notices" />
+
+    <item
+        android:id="@+id/ufiles"
+        android:icon="@drawable/common_upload_file_icon"
+        android:title="Uploaded Files" />
+
+    <item
+        android:id="@+id/mstudent"
+        android:icon="@drawable/admin_manage_student_icon"
+        android:title="Manage Student" />
+
+    <item
+        android:id="@+id/mfaculty"
+        android:icon="@drawable/admin_manage_faculty_icon"
+        android:title="Manage Faculty" />
+
+</menu>

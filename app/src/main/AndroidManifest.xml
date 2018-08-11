@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sem8.integrate.app.mainapp_1">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login.Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.Student_Login" />
+        <activity android:name=".Login.Student_Register" />
+        <activity android:name=".Login.Faculty_Login" />
+        <activity android:name=".Login.Admin_Login" />
+        <activity android:name=".Login.Faculty_Register" />
+        <activity android:name=".Student.Student_Home" />
+        <activity
+            android:name=".Student.Student_Download"
+            android:label="Download File" />
+        <activity
+            android:name=".Faculty.Faculty_Home" />
+        <activity
+            android:name=".Common_Firebase_WebView_Activity"
+            android:label="Firebase Console" />
+        <activity
+            android:name=".Faculty.Faculty_Upload_File"
+            android:label="Upload File" />
+        <activity
+            android:name=".Faculty.Faculty_Upload_Notice"
+            android:label="Add Notice" />
+        <activity
+            android:name=".Admin.Admin_Home" />
+        <activity
+            android:name=".Admin.Admin_Upload_Notice"
+            android:label="Add Notice" />
+        <activity
+            android:name=".Admin.Admin_Upload_File"
+            android:label="Upload File" />
+        <activity
+            android:name=".Admin.Admin_Manage_Subject"
+            android:label="Manage Subjects"/>
+    </application>
+
+</manifest>

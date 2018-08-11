@@ -1,0 +1,13 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sem8.integrate.app.mainapp_1.Admin.A_Uploaded_Files_Fragment">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="455dp"
+        android:id="@+id/ufiles_lv"
+        android:dividerHeight="3dp" />
+
+</FrameLayout>

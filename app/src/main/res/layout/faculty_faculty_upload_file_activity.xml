@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sem8.integrate.app.mainapp_1.Faculty.Faculty_Upload_File">
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="46dp"
+        android:text="     File Summary"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="#fff"
+        android:visibility="visible"
+        android:layout_marginTop="157dp"
+        android:id="@+id/sumfile_tv"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="46dp"
+        android:id="@+id/del_upfile_ibtn"
+        android:layout_marginTop="157dp"
+        android:layout_marginLeft="320dp"
+        android:src="@drawable/common_upload_file_bin_icon"
+        android:visibility="invisible"
+        android:background="#50cbe1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Select File"
+        android:textColor="#fff"
+        android:background="#50cbe1"
+        android:id="@+id/get_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TableLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Subject: -"
+                android:textSize="20dp"
+                android:id="@+id/sub_tv"
+                android:textColor="#000"
+                tools:ignore="SpUsage" />
+
+            <Spinner
+                android:id="@+id/sub_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <android.support.v4.widget.Space
+            android:layout_width="10dp"
+            android:layout_height="20dp"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Category: -"
+                android:textSize="20dp"
+                android:id="@+id/cat_tv"
+                android:textColor="#000" />
+
+            <Spinner
+                android:id="@+id/cat_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <android.support.v4.widget.Space
+            android:layout_width="10dp"
+            android:layout_height="20dp"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select File Type: -"
+                android:textSize="20dp"
+                android:id="@+id/file_tv"
+                android:textColor="#000"
+                tools:ignore="SpUsage" />
+
+            <Spinner
+                android:id="@+id/file_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.2dp"
+        android:layout_marginTop="145dp"
+        android:elevation="7dp"
+        android:background="@android:color/black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:layout_marginTop="205dp"
+        android:id="@+id/sc_id"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:orientation="vertical"
+            android:layout_above="@+id/get_btn"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="File Name: -"
+                android:textSize="20dp"
+                android:id="@+id/filename_tv" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/filename_et"
+                android:hint="File Name: - "
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Department: - "
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:id="@+id/dept_tv" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semester: - "
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:id="@+id/sem_tv" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Division: - "
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:id="@+id/div_tv" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject: - "
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:id="@+id/subs_tv" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Category: - "
+                android:textSize="20dp"
+                android:id="@+id/cats_tv" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="File Type: - "
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:id="@+id/filetype_tv" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

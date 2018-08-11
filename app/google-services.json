@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "748884650184",
+    "firebase_url": "https://cloud-3fe34.firebaseio.com",
+    "project_id": "cloud-3fe34",
+    "storage_bucket": "cloud-3fe34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748884650184:android:c74a6498ceb91c7b",
+        "android_client_info": {
+          "package_name": "sem8.integrate.app.mainapp_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748884650184-pp8pm4nf537jkijjq7mrdr9t0cqfhh29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxtJ8uT6klepnfPBEPVnwItGL8MzTZpcE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748884650184:android:fd37d204a0cf53ac",
+        "android_client_info": {
+          "package_name": "com.example.rut.taxi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748884650184-pp8pm4nf537jkijjq7mrdr9t0cqfhh29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxtJ8uT6klepnfPBEPVnwItGL8MzTZpcE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

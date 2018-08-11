@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_student_register_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="sem8.integrate.app.mainapp_1.Login.Student_Register">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_ripple_effect"
+        android:text="Generate Student Id"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:id="@+id/reg_btn"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Student Registration"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/login_title"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/login_title"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/name_et"
+            android:hint="Name" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/name_et"
+            android:layout_alignStart="@+id/name_et"
+            android:id="@+id/dept_et"
+            android:hint="Department"
+            tools:ignore="HardcodedText" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_below="@+id/dept_et"
+            android:layout_alignStart="@+id/dept_et"
+            android:id="@+id/sem_et"
+            android:hint="Semester"
+            tools:ignore="HardcodedText" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/div_et"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/sem_et"
+            android:hint="Division"
+            tools:ignore="HardcodedText" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/rno_et"
+            android:layout_below="@+id/div_et"
+            android:layout_alignStart="@+id/div_et"
+            android:hint="Roll No"
+            tools:ignore="HardcodedText" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/sid_et"
+            tools:ignore="HardcodedText,LabelFor,RtlHardcoded"
+            android:hint="Student Id"
+            android:drawablePadding="20dp"
+            android:layout_above="@+id/login_btn"
+            android:layout_alignStart="@+id/div_et"
+            android:enabled="false"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/pwd_et"
+            tools:ignore="HardcodedText,LabelFor,RtlHardcoded"
+            android:hint="Password"
+            android:enabled="false"
+            android:drawableLeft="@drawable/login_password_icon"
+            android:drawablePadding="20dp"
+            android:layout_above="@+id/login_btn"
+            android:layout_alignStart="@+id/div_et" />
+
+    </LinearLayout>
+
+</RelativeLayout>

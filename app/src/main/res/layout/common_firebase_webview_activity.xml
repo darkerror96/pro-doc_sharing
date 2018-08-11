@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/common_firebase_webview_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sem8.integrate.app.mainapp_1.Common_Firebase_WebView_Activity">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/f_wv"/>
+
+</RelativeLayout>
