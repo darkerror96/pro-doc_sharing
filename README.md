@@ -1,5 +1,5 @@
 # pro-doc_sharing
-Cloud based Document Sharing Android Application for School/Colleges/Universities.
+Cloud based Document Sharing Android Application for Schools/Colleges/Universities.
 
 Complex level of an Android application integrated with many well-known Libraries.
 
